@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amysayso/Desktop/CIDM3312/CompoundInterest/CompoundInterest.csproj",
+      "projectUniqueName": "/Users/amysayso/Desktop/CIDM3312/HW/CompoundInterest/CompoundInterest.csproj",
       "projectName": "CompoundInterest",
-      "projectPath": "/Users/amysayso/Desktop/CIDM3312/CompoundInterest/CompoundInterest.csproj",
+      "projectPath": "/Users/amysayso/Desktop/CIDM3312/HW/CompoundInterest/CompoundInterest.csproj",
       "packagesPath": "/Users/amysayso/.nuget/packages/",
-      "outputPath": "/Users/amysayso/Desktop/CIDM3312/CompoundInterest/obj/",
+      "outputPath": "/Users/amysayso/Desktop/CIDM3312/HW/CompoundInterest/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

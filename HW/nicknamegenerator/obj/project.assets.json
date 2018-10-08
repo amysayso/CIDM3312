@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amysayso/Desktop/CIDM3312/nicknamegenerator/nicknamegenerator.csproj",
+      "projectUniqueName": "/Users/amysayso/Desktop/CIDM3312/HW/nicknamegenerator/nicknamegenerator.csproj",
       "projectName": "nicknamegenerator",
-      "projectPath": "/Users/amysayso/Desktop/CIDM3312/nicknamegenerator/nicknamegenerator.csproj",
+      "projectPath": "/Users/amysayso/Desktop/CIDM3312/HW/nicknamegenerator/nicknamegenerator.csproj",
       "packagesPath": "/Users/amysayso/.nuget/packages/",
-      "outputPath": "/Users/amysayso/Desktop/CIDM3312/nicknamegenerator/obj/",
+      "outputPath": "/Users/amysayso/Desktop/CIDM3312/HW/nicknamegenerator/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
