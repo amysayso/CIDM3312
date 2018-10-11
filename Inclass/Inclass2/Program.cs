@@ -240,6 +240,17 @@ namespace Inclass2
                     }
                 
                     Commands.StudentsNotSeniors();
+                    Commands.StudentM();
+                    Commands.John();
+                    Commands.Alexander();
+                    Commands.ShortestFirstName();
+                    Commands.ShortestLastName();
+                    Commands.SortedFirstName();
+                    Commands.LastNameDESC();
+                    Commands.SortedRole();
+                    Commands.SortedSeniorLN();
+                    Commands.notSeniorStudentNameDESC();
+                    Commands.GroupedClassRank();
                     
                 }
             
