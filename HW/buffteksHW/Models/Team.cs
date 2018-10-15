@@ -1,6 +1,6 @@
 using System;
 
-namespace buffteksHW.Models
+namespace buffteksHW
 {
 
 public class Team

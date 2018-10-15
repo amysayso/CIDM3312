@@ -2,7 +2,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 
-namespace buffteksHW.Models
+namespace buffteksHW
 {
     //here, we extend the DbContext class with our own class 'AppDbContext'
     public class AppDbContext : DbContext
@@ -28,5 +28,20 @@ namespace buffteksHW.Models
 
         public DbSet <Organization> Organizations {get; set;}
 
-    }    
+        public DbSet <StudentTeam> StudentTeam {get; set;}
+
+
+        public DbSet <ClientOrg> ClientOrg {get; set;}
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<StudentTeam>()
+            .HasKey(st => new {st.TeamID, st.StudentID});
+        
+        modelBuilder.Entity<ClientOrg>()
+            .HasKey(co => new {co.ClientID, co.OrganizationID});
+    }
 }
+}
+      
+

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using buffteksHW.Models;
+using buffteksHW;
 
 namespace buffteksHW
 {
@@ -289,8 +289,98 @@ namespace buffteksHW
                             Console.WriteLine(o);
                         }
                     }
-            }
-        
+            
+
+            //StudentTeam
+             if(!db.StudentTeam.Any())
+                    {
+                    List<StudentTeam> studentTeams = new List<StudentTeam>()
+                        {
+                            new StudentTeam()
+                            {
+                               
+                               StudentID = 1,
+                               TeamID = 1,
+                               Role= "Programmer"
+                            },
+
+                             new StudentTeam()
+                            {
+                               
+                               StudentID = 2,
+                               TeamID = 2,
+                               Role= "Content"
+                            },
+                             new StudentTeam()
+                            {
+                               
+                               StudentID = 3,
+                               TeamID = 3,
+                               Role= "Front-End Developer"
+                            } 
+                        };            
+                        
+
+                        db.StudentTeam.AddRange(studentTeams);
+                        db.SaveChanges();   
+                        Console.WriteLine("Student Team Added");
+                }                                         
+            
+                    else
+                    {
+                        var StudentTeam = db.StudentTeam.ToList();
+                        foreach(StudentTeam st in StudentTeam)
+                        {
+                            Console.WriteLine(st);
+                        }
+                    }
+                
+
+            //ClientOrg
+             if(!db.ClientOrg.Any())
+                    {
+                    List<ClientOrg> clientOrgs = new List<ClientOrg>()
+                        {
+                            new ClientOrg ()
+                            {
+                               
+                               ClientID= 1,
+                               OrganizationID = 1
+                               
+                            },
+                            new ClientOrg ()
+                            {
+                               
+                               ClientID= 2,
+                               OrganizationID = 2
+                               
+                            },
+                            new ClientOrg ()
+                            {
+                               
+                               ClientID= 3,
+                               OrganizationID = 3
+                               
+                            },
+
+                             
+                        };            
+                        
+
+                        db.ClientOrg.AddRange(clientOrgs);
+                        db.SaveChanges();   
+                        Console.WriteLine("Client Organization Added");
+                }                                         
+            
+                    else
+                    {
+                        var ClientOrg = db.ClientOrg.ToList();
+                        foreach(ClientOrg co in ClientOrg)
+                        {
+                            Console.WriteLine(co);
+                        }
+                    }
+                }
                 catch(Exception exp)
                 {
                     Console.WriteLine(exp.Message);
@@ -298,6 +388,24 @@ namespace buffteksHW
             }
         }
     }
+
+
+    // private static void UpdateStudentRole()
+    // {
+    //     using ( var db = new AppDbContext())
+    //     {
+    //         var StudentID = db.StudentTeam;
+    //         if (!Student.Any())
+    //         {
+    //             Console.WriteLine("No students in the database]n");
+    //         }
+    //         else
+    //         {
+    //             ReadStudentTeamFromDB
+    //         }
+    //     }
+
+
 }
     
 
